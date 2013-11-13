@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="kicker.js"></script>
+	<style>
+		#kicker {
+			width: 876px;
+			height: 584px;
+		}
+		#kicker img#game {
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+		#kicker #progress_container {
+			position: absolute;
+			top: 25px;
+			left: 25px;
+			height: 20px;
+			width: 300px;
+			background-color: #000000;
+		}
+		#kicker #progress {
+			margin: 0;
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 100%;
+			width: 1px;
+			background-color: #FFFF00;
+		}
+		#kicker #progress_min {
+			margin: 0;
+			position: absolute;
+			top: 0;
+			left: 30px;
+			height: 100%;
+			width: 5px;
+			background-color: #FF0000;
+		}
+		#kicker #progress_max {
+			margin: 0;
+			position: absolute;
+			top: 0;
+			left: 270px;
+			height: 100%;
+			width: 5px;
+			background-color: #FF0000;
+		}
+		#fieldgoal_bottom {
+			font-size: 104px;
+			position: absolute;
+			top: 380px;
+			left: 740px;
+		}
+		#fieldgoal_top {
+			font-size: 104px;
+			position: absolute;
+			top: 290px;
+			left: 704px;
+		}
+		#ball_container {
+			position: absolute;
+			top: 299px;
+			left: 633px;			
+			width: 1000px;
+			height: 1000px;
+			overflow: hidden;
+		}
+		#banner {
+			font-size: 125px;
+			position: absolute;
+			top: 250px;
+			left: 50px;
+			display:none;
+		}
+		#ball {
+			position: absolute;
+			top: 0px;
+			left: -126px;
+		}
+	</style>
+</head>
+<body>
+	<div id="kicker">
+		<img id="game" src="0.png" />
+		<div id="progress_container">
+			<div id="progress"></div>
+			<div id="progress_min"></div>
+			<div id="progress_max"></div>
+		</div>
+		<div id="fieldgoal_top">|_<span class="right_bar">|</div>
+		<div id="fieldgoal_bottom">|</div>
+		<div id="ball_container">
+			<img id="ball" src="ball.png"></img>
+		</div>
+		<div id="banner">EAT EM RAW</div>
+	</div>
+</body>
+</html>
